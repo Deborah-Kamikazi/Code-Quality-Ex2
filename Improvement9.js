@@ -1,8 +1,8 @@
 function calculateMatrixSum(matrix) {
-  const ms = [];
+  const finalmatrix = [];
   matrix.map((el) => {
     el = el.reduce((a, b) => a + b, 0);
-    ms.push(el);
+    finalmatrix.push(el);
   });
   return ms.reduce((a, b) => a + b);
 }
